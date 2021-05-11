@@ -1,0 +1,139 @@
+$break-small: 400px;
+
+.hidden {
+  display : none;
+}
+.show {
+  display: block;
+}
+
+
+
+nav {
+   background: transparent;
+   h1,h2 {
+     background: transparent;
+     a {
+       background: transparent;
+     }
+   }
+}
+nav {
+
+
+  /* align-items: flex-start;
+  flex-direction: column;
+  padding: 20px; */
+  display: block;
+  position: fixed;
+  //background;
+  z-index: 1000000000;
+  padding: 40px 0 0 50px;
+
+  //background-color: blue;
+
+  @media screen and (max-width: $break-small) {
+    position: fixed;
+    //width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1em 0 1em 1em;
+    //box-sizing: border-box;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; */
+  }
+
+  h2 {
+    display: inline-block;
+    /* :after {
+      content:"00a0/00a0";
+      display:inline-block;
+    } */
+  }
+  h2:not(:last-of-type):after {
+
+        content: "\00a0/";
+        display:inline-block;
+
+
+
+  }
+
+  .break {
+    height: .75em;
+    display: block;
+  }
+
+  /* a.link_header {
+    &:hover {
+      color: black;
+    }
+  } */
+
+  .sub-menu {
+
+    background-color: transparent;
+    div {
+      background-color: transparent;
+      a.project {
+        background-color: transparent;
+      }
+    }
+    .projects {
+      display: block;
+      background-color: transparent;
+      .project {
+        display: table;
+        background-color: transparent;
+        /* font-size: 1.3em;
+        line-height: 1.4em; */
+        a {
+          background-color: transparent;
+        }
+
+        .strikethrough {
+
+          display: inline-block;
+        	position: relative;
+        	/* transition: all 0.5s cubic-bezier(.55, 0, .1, 1); */
+          &:hover:after {
+          	content: '';
+          	position: absolute;
+          	display: block;
+            left: -4px;
+          	width: 108%;
+          	height: 1px;
+          	margin-top: -0.75em;
+          	background: white;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+/*   .second {
+  display: flex;
+  flex-direction: row;
+
+
+} */
+
+  /* h2 {
+    display: inline-block;
+  } */
+
+}
+
+/* @keyframes strikethrough {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+} */

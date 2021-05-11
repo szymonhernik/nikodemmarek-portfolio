@@ -1,0 +1,7 @@
+/node_modules
+/dist
+/src/images
+/src/fonts
+/.vscode
+/haters
+.DS_Store

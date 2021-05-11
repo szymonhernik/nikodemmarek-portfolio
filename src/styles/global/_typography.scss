@@ -1,0 +1,68 @@
+//! import google fonts
+// @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700');
+// OR use @font-face like below
+
+//! import a custom font below
+@font-face {
+  font-family: 'Swiss721BT-BlackExtended';
+  font-display: fallback;
+  font-style: normal;
+  src:
+    url('fonts/Swiss721BT-BlackExtended.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/Swiss721BT-BlackExtended.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Founders-Grotesk-Mono-Regular';
+  font-display: fallback;
+  font-style: normal;
+  src:
+    url('fonts/Founders-Grotesk-Mono-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+//! set font variables
+$font-heading: 'Swiss721BT-BlackExtended', Fallback, 'arial', sans-serif;
+$font-list: 'Founders-Grotesk-Mono-Regular', Fallback, 'arial', sans-serif;
+/* $font-body: sans-serif; */
+
+
+* {
+  text-decoration: none;
+  color: white;
+
+}
+
+html,body,h1,h2,a,span,li {
+  font-family: $font-heading, sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+p {
+  font-family: "Founders-Grotesk-Mono-Regular", Fallback, "arial", sans-serif, sans-serif !important;
+  font-size: .75em;
+  line-height: 1.2em;
+}
+
+li {
+  font-family: $font-list, sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: regular;
+}
+
+/*
+html {
+  //font-size: 62.5%; // 1rem = 10px, 3.5rem = 35px;
+  font-family: $font-heading, serif;
+} */
+/* h1 {
+  font-family: $font-heading, serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+h2, span.separation {
+  font-family: $font-heading, serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+ */
